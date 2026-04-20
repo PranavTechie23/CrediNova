@@ -1,1 +1,142 @@
-node_modules
+# -----------------------------
+# OS Generated Files
+# -----------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -----------------------------
+# IDE / Editor Files
+# -----------------------------
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+*.log
+
+# -----------------------------
+# Environment Variables (IMPORTANT)
+# -----------------------------
+.env
+.env.*
+*.env
+
+# -----------------------------
+# Logs & Runtime Files
+# -----------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# -----------------------------
+# Dependency Directories
+# -----------------------------
+node_modules/
+vendor/
+packages/
+
+# -----------------------------
+# Build / Output Directories
+# -----------------------------
+dist/
+build/
+out/
+target/
+bin/
+obj/
+
+# -----------------------------
+# C / C++ / DSA (Important for you)
+# -----------------------------
+*.out
+*.exe
+*.o
+*.a
+*.so
+*.dSYM/
+*.stackdump
+
+# -----------------------------
+# Java / Spring Boot
+# -----------------------------
+*.class
+*.jar
+*.war
+*.ear
+target/
+.gradle/
+build/
+
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+venv/
+.env/
+
+# -----------------------------
+# Node.js / React
+# -----------------------------
+node_modules/
+npm-debug.log*
+yarn.lock
+package-lock.json
+.next/
+coverage/
+
+# -----------------------------
+# Database Files
+# -----------------------------
+*.sqlite
+*.db
+
+# -----------------------------
+# Temporary Files
+# -----------------------------
+*.tmp
+*.temp
+.cache/
+*.bak
+
+# -----------------------------
+# Coverage Reports
+# -----------------------------
+coverage/
+*.lcov
+
+# -----------------------------
+# Docker
+# -----------------------------
+.dockerignore
+Dockerfile*
+
+# -----------------------------
+# Misc
+# -----------------------------
+*.pid
+*.seed
+*.tgz
+*.gz
+*.zip
+
+# -----------------------------
+# Secrets (VERY IMPORTANT)
+# -----------------------------
+*.pem
+*.key
+*.crt
+*.cert
+secrets/
