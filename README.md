@@ -7,9 +7,13 @@
 
 ## Demo Video
 
-<video src="./public/CrediNova.mp4" controls width="100%"></video>
-
-If the embedded player does not render, open the file directly: [CrediNova Demo](./public/CrediNova.mp4).
+> Some README renderers do not play local MP4 files inline.
+>
+> **Use this direct link:** [Watch / Download CrediNova Demo (MP4)](./public/CrediNova.mp4?raw=1)
+>
+> **Google Drive:** [Watch on Google Drive](https://drive.google.com/file/d/1IUojbH16Wp52otLhDkQN_DL_JNVKUwue/view?usp=drive_link)
+>
+> Fallback link: [Open video file](./public/CrediNova.mp4)
 
 ---
 
