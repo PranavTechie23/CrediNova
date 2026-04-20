@@ -5,6 +5,14 @@
 
 ---
 
+## Demo Video
+
+<video src="./public/CrediNova.mp4" controls width="100%"></video>
+
+If the embedded player does not render, open the file directly: [CrediNova Demo](./public/CrediNova.mp4).
+
+---
+
 ## Table of Contents
 
 1. [Problem Statement](#problem-statement)
