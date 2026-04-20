@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CrediNova | AI-Powered Credit Intelligence</title>
+  <meta name="description"
+    content="CrediNova - Advanced AI-powered credit analysis and risk assessment platform providing transparent and explainable financial insights." />
+
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <meta property="og:title" content="CrediNova | AI-Powered Credit Intelligence" />
+  <meta property="og:description" content="Advanced AI-powered credit analysis and risk assessment platform." />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <script>
+    // Prevent FOUC by applying theme before React renders
+    (function () {
+      const theme = localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      const html = document.documentElement;
+
+      // Remove both classes to ensure clean state
+      html.classList.remove("light", "dark");
+
+      // Add the appropriate class
+      html.classList.add(theme);
+
+      // Set data attribute
+      html.setAttribute("data-theme", theme);
+
+      // Set colorScheme
+      html.style.colorScheme = theme;
+    })();
+  </script>
+  <script type="module" crossorigin src="/assets/index-DW0cCCen.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DCrZN-_P.css">
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
