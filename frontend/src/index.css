@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 255 255 255;
+    --surface: 248 250 252;
+    --surface-2: 241 245 249;
+    --border: 226 232 240;
+    --primary: 2 132 199;
+    --primary-glow: rgba(2, 132, 199, 0.15);
+    --accent: 99 102 241;
+    --success: 16 185 129;
+    --warning: 245 158 11;
+    --danger: 239 68 68;
+    --text-primary: 15 23 42;
+    --text-muted: 100 116 139;
+    --text-secondary: 71 85 105;
+    --text-faint: 148 163 184;
+  }
+  
+  .dark {
+    --background: 8 12 20;
+    --surface: 13 20 33;
+    --surface-2: 17 24 39;
+    --border: 30 45 64;
+    --primary: 0 212 255;
+    --primary-glow: rgba(0, 212, 255, 0.15);
+    --accent: 123 97 255;
+    --success: 0 229 153;
+    --warning: 255 184 0;
+    --danger: 255 77 106;
+    --text-primary: 240 244 255;
+    --text-muted: 107 127 163;
+    --text-secondary: 148 163 184;
+    --text-faint: 46 61 82;
+  }
+
+  html {
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--text-primary);
+    @apply antialiased selection:bg-primary/20 selection:text-primary;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sora', sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-surface/85 backdrop-blur-[16px] border border-primary/20;
+  }
+  .glass-panel-accent {
+    @apply bg-surface/85 backdrop-blur-[16px] border border-accent/20;
+  }
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:border-primary/50 hover:shadow-lg;
+  }
+  .text-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  /* Enhanced utilities */
+  .gradient-primary {
+    @apply bg-gradient-to-r from-primary via-primary to-primary/80;
+  }
+  
+  .gradient-accent {
+    @apply bg-gradient-to-r from-accent via-accent to-accent/80;
+  }
+  
+  .gradient-success {
+    @apply bg-gradient-to-r from-success via-success to-success/80;
+  }
+  
+  .glow-primary {
+    @apply shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30;
+  }
+  
+  .glow-accent {
+    @apply shadow-lg shadow-accent/20 hover:shadow-xl hover:shadow-accent/30;
+  }
+  
+  .smooth-transition {
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .focus-ring-primary {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:ring-offset-background;
+  }
+}
+
+/* Base custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(var(--surface-2));
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--border));
+  border-radius: 10px;
+  border: 2px solid rgb(var(--surface-2));
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--primary));
+  border-color: rgb(var(--surface-2));
+}
+
+/* Charts Tooltip Customization */
+.recharts-default-tooltip {
+  background-color: rgb(var(--surface)) !important;
+  border: 1px solid rgb(var(--border)) !important;
+  color: rgb(var(--text-primary)) !important;
+  border-radius: 8px !important;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Enhanced animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideRight {
+  from { transform: translateX(-20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideLeft {
+  from { transform: translateX(20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes shimmer {
+  0%, 100% { background-position: -1000px 0; }
+  50% { background-position: 1000px 0; }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 10px rgba(0, 212, 255, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(0, 212, 255, 0.6); }
+}
+
+@keyframes drawArc {
+  0% { stroke-dashoffset: 1000; }
+  100% { stroke-dashoffset: 0; }
+}
+
+@keyframes floatUp {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}

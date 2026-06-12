@@ -1,0 +1,24 @@
+﻿{
+  "name": "credinova-backend",
+  "version": "1.0.0",
+  "description": "Backend API scaffold for CrediNova",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.2",
+    "redis": "^4.6.12",
+    "jsonwebtoken": "^9.0.3",
+    "bcrypt": "^5.1.1",
+    "axios": "^1.6.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
